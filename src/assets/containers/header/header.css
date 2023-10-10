@@ -1,0 +1,21 @@
+.header {
+    position: relative;
+    background-image: url('../../images/header-background.png');
+    background-color: black;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+    cursor: pointer;
+}
+
+.header-text {
+    color: var(--color-header);
+  }

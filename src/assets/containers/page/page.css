@@ -1,0 +1,35 @@
+.start-exploring {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10em;
+    color: rgb(177, 177, 177);
+    gap: 20px;
+}
+
+.fa-film, .fa-magnifying-glass {
+    font-size: 4rem;
+}
+
+.movielist-container {
+    margin: 4em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.api-undefined-text, .loading-screen {
+    position: absolute;
+    padding-top: 10em;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    z-index: 1;
+    background-color: white;
+    color: rgb(177, 177, 177);
+}
+
+.hidden {
+    display: none;
+}

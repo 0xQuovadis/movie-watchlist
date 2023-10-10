@@ -1,0 +1,130 @@
+.movielist {
+    margin: 2em auto;
+    width: 50vw;
+}
+
+.content-width {
+    min-width: max-content;
+}
+
+.overflow-ellipsis-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: initial;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.overflow-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie {
+    display: grid;
+    grid-template-columns: 150px 500px;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    margin-top: 1em;
+    padding-bottom: 1em;
+}
+
+.movie-img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    box-shadow: 3px 3px 12px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 3px 12px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 12px 1px rgba(0,0,0,0.75);
+    min-width: 1fr;
+}
+
+.movie__name {
+    display: flex;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 1 / 2;
+}
+
+.movie-plot {
+    grid-column: 2;
+    grid-row: 3;
+    font-size: 1.25rem;
+    margin-bottom: 0.5em;
+    color: gray;
+}
+
+/* movie__specs */
+
+.movie__specs {
+    display: flex;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 2 / 3;
+    align-self: flex-start;
+    font-size: 1.25rem;
+}
+
+.movie__specs-length {
+    margin-right: 1.5em;
+}
+
+.movie__specs-watchlist-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto;
+    min-width: 140px;
+    padding: 0.3em 0.75em;
+    background-color: rgb(204, 204, 204);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.movie__specs-watchlist-btn .remove-in-watchlist {
+    display: none;
+}
+
+.movie__specs-watchlist-btn:hover .remove-in-watchlist {
+    display: inline;
+}
+
+.movie__specs-watchlist-btn:hover .default-in-watchlist {
+    display: none;
+}
+
+/* font styling */
+
+.movie__name-title {
+    font-size: 1.5rem;
+    margin-top: 0.5em;
+}
+
+.movie__name-rating {
+    font-size: 1.25rem;
+    margin-left: auto;
+    padding-left: 0.75em;
+}
+
+/* buttons */
+
+.fa-check {
+    color: rgb(52, 156, 52);
+}
+
+.in-watchlist-btn {
+    background-color: rgb(164, 255, 164);
+}
+
+.in-watchlist-btn:hover {
+    background-color: rgb(197, 0, 0);
+    color: white;
+}
+
+.fa-star {
+    color:#FEC654;
+}

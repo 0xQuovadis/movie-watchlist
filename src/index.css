@@ -1,0 +1,33 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: 'Inter', sans-serif;
+  --font-bold: 700;
+  --font-light: 400;
+  --font-size-h1: 2.5rem;
+  --font-size-h4: 0.9rem;
+  --color-header: white;
+
+}
+
+body, h1, h2, h3, h4, p {
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+img, picture, iframe {
+  display: block;
+  width: 100%;
+  margin: auto;
+
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
