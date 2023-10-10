@@ -44,7 +44,7 @@ function App() {
     localStorage.setItem('myWatchlist', JSON.stringify(watchlist))
   }, [watchlist])
 
-  React.useEffect(() => {setWatchlist(initialWatchlist)}, [])
+  React.useEffect(() => {setWatchlist(initialWatchlist || [])}, [])
 
   function handleMovieData(data) {
     setSearchList(prevList =>
