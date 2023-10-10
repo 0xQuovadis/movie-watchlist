@@ -2,7 +2,7 @@ import Header from './assets/containers/header/Header'
 import Page from './assets/containers/page/Page'
 import Searchbar from './assets/components/searchbar/Searchbar'
 import React from 'react'
-import Movielist from './assets/components/movieList/Movielist'
+import Movielist from './assets/components/movielist/Movielist'
 
 /* 
   Done:
