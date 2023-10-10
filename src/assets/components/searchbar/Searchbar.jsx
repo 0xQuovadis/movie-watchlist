@@ -24,7 +24,7 @@ export default function Searchbar(props) {
         }
         props.setShowWatchlist(prev => false)
         props.setSearchList([])
-        fetch(`http://www.omdbapi.com/?apikey=779deaec&s=${props.searchbarText}`)
+        fetch(`https://www.omdbapi.com/?apikey=779deaec&s=${props.searchbarText}`)
         .then(response => response.json())
         .then(data => {
             if (data.Response === 'False') {
@@ -32,7 +32,7 @@ export default function Searchbar(props) {
             } else {
 
                 data.Search.forEach(element => {
-                    fetch(`http://www.omdbapi.com/?apikey=779deaec&i=${element.imdbID}`)
+                    fetch(`https://www.omdbapi.com/?apikey=779deaec&i=${element.imdbID}`)
                         .then(res => res.json())
                         .then(data => props.onSearch(data))
                         props.setSearchbarText('')
