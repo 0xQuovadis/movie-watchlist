@@ -20,6 +20,7 @@ import Movielist from './assets/components/movielist/Movielist'
     - Loading screen while waiting for search results
     - watchlist btn to not instantly turn red when clicked?
     - "..." click from movie plot to expand
+    - Replace 404 images?
 
   Doable? (API limitations?):
     - Search for "includes" instead of exact word from title

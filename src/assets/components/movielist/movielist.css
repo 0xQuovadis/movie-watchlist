@@ -83,6 +83,13 @@
     border: none;
     border-radius: 15px;
     cursor: pointer;
+    
+}
+
+.movie__specs-watchlist-btn:hover {
+    background-color: rgb(236, 236, 236);
+    border: 0.1em solid gray;
+    padding: 0.2em 0.65em;
 }
 
 .movie__specs-watchlist-btn .remove-in-watchlist {
