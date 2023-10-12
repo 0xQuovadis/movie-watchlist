@@ -17,10 +17,12 @@ import Movielist from './assets/components/movielist/Movielist'
     -  Reset searchbarText when getSearchList() --> no reset if response is undefined
 
   TO DO:
+    - Make it responsive + cleaner design
     - Loading screen while waiting for search results
     - watchlist btn to not instantly turn red when clicked?
     - "..." click from movie plot to expand
     - Replace 404 images?
+    - .catch api call
 
   Doable? (API limitations?):
     - Search for "includes" instead of exact word from title

@@ -25,20 +25,33 @@ export default function Searchbar(props) {
         props.setShowWatchlist(prev => false)
         props.setSearchList([])
         fetch(`https://www.omdbapi.com/?apikey=779deaec&s=${props.searchbarText}`)
-        .then(response => response.json())
+        .then(res => {
+            if (!res.ok) {
+                throw Error("Movie data not available") 
+            }
+            return res.json()
+        })
         .then(data => {
+            console.log(data)
             if (data.Response === 'False') {
                 document.getElementsByClassName('api-undefined-text')[0].classList.remove('hidden')
             } else {
 
                 data.Search.forEach(element => {
                     fetch(`https://www.omdbapi.com/?apikey=779deaec&i=${element.imdbID}`)
-                        .then(res => res.json())
+                        .then(res => {
+                            if (!res.ok) {
+                                throw Error("Movie data not available") 
+                            }
+                            return res.json()
+                        })
                         .then(data => props.onSearch(data))
+                        .catch(err => console.error(err))
                         props.setSearchbarText('')
                 })
             }
         })
+        .catch(err => console.error(err))
     }
 
 
